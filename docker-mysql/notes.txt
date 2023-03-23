@@ -1,0 +1,19 @@
+# Start the mysql container using
+docker-compose up -d
+
+# Connect to mysql container using
+docker-compose exec mysql /bin/bash
+
+# Start mysql shell using 'testuser'
+mysql -u testuser -p
+    - when asked for password, enter 'testpassword' => refer to compose.yml file
+
+# To connect mysql using root use
+mysql -u root -p
+    - when asked for password, enter 'root'
+
+
+# Sample SQL scripts:
+create table studs (name varchar(20), addr varchar(50), age int);
+insert into studs values('abc def', 'india', 10), 
+('xyz lmn', 'russia', 20),('pqr lst', 'spain', 30);

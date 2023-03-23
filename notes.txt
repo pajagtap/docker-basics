@@ -1,0 +1,6 @@
+# Start container using docker-compose use:
+docker-compose up -d
+(make sure the cmd prompt is at location where docker-compose.yml resides)
+
+# Stop the containers/services use:
+docker-compose down
